@@ -15,6 +15,7 @@ function MyApp({ Component, pageProps }) {
       theme = "light"
     }
     setTheme(theme);
+
   }, []);
   // Make the changing possible
   function changeTheme() {
@@ -28,6 +29,9 @@ function MyApp({ Component, pageProps }) {
       window.localStorage.theme = "light";
       setTheme("light");
     }
+
+    // This feels wrong to do
+    window.dispatchEvent( new Event('storage') )
 
   }
 

@@ -1,0 +1,13 @@
+{
+  "title": "Databases",
+  "entries": [
+    {
+      "name1": "MySQL",
+      "image": "/img/mysql.png"
+    },
+    {
+      "name1": "ArangoDB",
+      "image": "/img/arangodblight.png"
+    }
+  ]
+}

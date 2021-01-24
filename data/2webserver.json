@@ -1,0 +1,9 @@
+{
+  "title": "Webservers",
+  "entries": [
+    {
+      "name": "Nginx",
+      "image": "/img/nginx"
+    }
+  ]
+}
