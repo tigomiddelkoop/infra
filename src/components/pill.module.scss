@@ -1,0 +1,27 @@
+.pill {
+  @apply rounded px-1 font-light text-xs;
+}
+
+.primary {
+  @apply pill text-white bg-gray-700;
+}
+
+.secondary {
+  @apply pill text-black border-gray-700 text-white bg-gray-600;
+}
+
+.danger {
+  @apply pill bg-red-600 text-white;
+}
+
+.warning {
+  @apply pill bg-yellow-400 text-black;
+}
+
+.success {
+  @apply pill text-white bg-green-600;
+}
+
+.info {
+  @apply pill text-white bg-blue-600;
+}

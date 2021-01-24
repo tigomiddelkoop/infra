@@ -1,0 +1,18 @@
+.categoryContainer {
+  @apply py-2 px-8;
+}
+
+.categoryTitle {
+  @apply text-lg font-bold;
+}
+
+.categorySubTitle {
+  @apply text-xs
+}
+.link {
+  @apply flex flex-row my-0.5 w-auto px-2 py-1 rounded-lg justify-center hover:bg-gray-100;
+}
+
+.socialMediaCategory {
+  @apply flex flex-col;
+}

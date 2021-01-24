@@ -1,6 +1,7 @@
 import Navbar from "./navbar";
 // import Footer from "./footer";
 import Head from "next/head";
+import Footer from "./footer";
 
 export default function Layout({children, theme, changeTheme}) {
     return (
@@ -18,7 +19,7 @@ export default function Layout({children, theme, changeTheme}) {
                 <div className={"flex-1 p-4 dark:bg-gray-800"}>
                     {children}
                 </div>
-                {/*<Footer/>*/}
+                <Footer/>
             </div>
         </div>
     )

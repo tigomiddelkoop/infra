@@ -33,7 +33,7 @@ export default function Navbar(props) {
                             width={32}
                             className={"rounded-full"}
                         />
-                        <p className={"ml-2 jetbrains"}>Tigo Middelkoop (Infrastructure)</p>
+                        <p className={"ml-2 jetbrains"}>Tigo Middelkoop <span className={"text-xs jetbrains"}>(Infrastructure)</span></p>
                     </div>
                 </Link>
                 <div className={"flex flex-1"}/>
@@ -54,11 +54,15 @@ export default function Navbar(props) {
                             <FontAwesomeIcon className={"h-3 text-gray-500"} icon={faExternalLinkAlt}/>
                         </div>
                     </Link>
+                    <Link href={"https://blog.tigo.tech"}>
+                        <div className={inactiveNav}>
+                            <p className={"mr-1"}>Blog</p>
+                            <FontAwesomeIcon className={"h-3 text-gray-500"} icon={faExternalLinkAlt}/>
+                        </div>
+                    </Link>
                     <Link href={"https://infra.tigo.tech"}>
-                        <div>
-                            <div className={`${path == "/" ? activeNav : inactiveNav}`}>
-                                <p className={"mr-1"}>Infrastructure</p>
-                            </div>
+                        <div className={`${path == "/" ? activeNav : inactiveNav}`}>
+                            <p className={"mr-1"}>Infrastructure</p>
                         </div>
                     </Link>
                     <div className={"flex h-14"}>
