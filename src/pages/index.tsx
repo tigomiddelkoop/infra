@@ -69,7 +69,7 @@ export default function Home({infra}) {
                                     <div className={"flex flex-col py-2 items-center justify-center"}>
                                         {entry.image !== undefined ? <img style={{height: 64}} className={"mb-1"}
                                                                           src={getImage(entry.image)}/> : ""}
-                                        {entry.name !== undefined ? <p className={"jetbrains"}>{entry.name}</p> : ""}
+                                        {entry.name !== undefined && entry.image == undefined || entry.nameOverride ? <p className={"jetbrains"}>{entry.name}</p> : ""}
                                     </div>
                                 )}
                             </CardBody>

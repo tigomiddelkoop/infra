@@ -2,6 +2,7 @@
   "title": "Hosting",
   "entries": [
     {
+      "name": "Scaleway Elements",
       "image": {
         "light": "/img/scalewayelements.svg",
         "dark": "/img/scalewayelementsdark.svg"
@@ -9,7 +10,8 @@
     },
     {
       "name": "Scaleway Kapsule (Kubernetes)",
-      "image": "/img/scaleway.png"
+      "image": "/img/scaleway.png",
+      "nameOverride": true
     }
   ]
 }
