@@ -34,10 +34,9 @@ export default function Home({infra}) {
     }, [])
 
 
-    function getImage(image) {
+    const getImage = (image) => {
 
         if (typeof image == "object") return image[theme];
-
         return image
 
     }

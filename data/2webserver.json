@@ -2,8 +2,11 @@
   "title": "Webservers",
   "entries": [
     {
-      "name": "Nginx",
-      "image": "/img/nginx"
+      "name1": "Nginx",
+      "image": {
+        "dark": "/img/nginxdark.svg",
+        "light": "/img/nginxlight.svg"
+      }
     }
   ]
 }
