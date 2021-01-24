@@ -1,0 +1,27 @@
+.navItem {
+  @apply hover:bg-gray-100 cursor-pointer lg:px-2 px-4 flex items-center;
+}
+
+.navItemInactive {
+  @apply py-4 cursor-pointer navItem;
+}
+
+.navItemActive {
+  @apply pb-3 pt-4 border-b-4 border-red-700 navItem ;
+}
+
+.navButton {
+  @apply p-4 navItem w-12 justify-center h-14;
+}
+
+.navMenuButton {
+  @apply p-4 w-12 justify-center block md:hidden md:px-2 px-4 items-center;
+}
+
+.navHamburger {
+  @apply lg:hidden py-1 navItem;
+}
+
+.navbar {
+  @apply flex flex-col md:flex-row border-b border-gray-100;
+}
