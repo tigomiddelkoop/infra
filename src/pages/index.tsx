@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Card from "../components/card";
+import CardTitle from "../components/cardtitle";
 
 export default function Home() {
     return (
@@ -14,7 +15,7 @@ export default function Home() {
 
                 <div className={"rounded-lg w-96 mb-4 md:mx-1"}>
                     <Card>
-                        <p>Languages</p>
+                        <CardTitle>Hosting</CardTitle>
                     </Card>
                 </div>
                 <div className={"rounded-lg w-96 mb-4 md:mx-1"}>
