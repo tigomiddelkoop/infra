@@ -59,7 +59,7 @@ export default function Home({infra}) {
 
             </div>
 
-            <div className={"flex flex-col lg:flex-row mb-4 justify-center 2xl:mx-72"}>
+            <div className={"flex flex-wrap flex-row mb-4 justify-center 2xl:mx-72"}>
                 {infra.map(data => {
                     return <div className={"rounded-lg w-96 mb-4 md:mx-1"}>
                         <Card>
@@ -79,7 +79,7 @@ export default function Home({infra}) {
                 })}
 
             </div>
-
+            <div className={"text-center text-xs font-light dark:text-white"}> If any company does not want their logo here email me at tigo[dot]middelkoop[at]gmail[dot]com and I shall remove the images</div>
         </div>
     )
 }

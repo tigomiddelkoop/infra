@@ -10,7 +10,7 @@
     },
     {
       "name": "Scaleway Kapsule (Kubernetes)",
-      "image": "/img/scaleway.png",
+      "image": "/img/kapsule.svg",
       "nameOverride": true
     }
   ]
