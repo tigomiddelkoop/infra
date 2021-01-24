@@ -9,7 +9,7 @@ export default function Home({infra}) {
     const [theme, setTheme] = useState("");
 
     const handleStorage = (event: StorageEvent) => {
-        
+
         const newTheme = window.localStorage.theme
         setTheme(newTheme);
     }
@@ -87,7 +87,7 @@ export default function Home({infra}) {
 
 export function getStaticProps() {
 
-    const folder = process.cwd() + "\\data\\";
+    const folder = process.cwd() + "/data/";
     const infraFiles = fs.readdirSync(folder)
 
     const details = infraFiles.map(filename => {
