@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: infra
+  labels:
+    app: infra
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: infra
+  template:
+    metadata:
+      labels:
+        app: infra
+    spec:
+      containers:
+        - name: infra
+          image: rg.nl-ams.scw.cloud/genericdevelopment/infra:1.0.0
+          ports:
+            - containerPort: 3000
+          env:
+            - name: NODENAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: spec.nodeName
+          readinessProbe:
+            httpGet:
+              path: /api/health
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 10
+            failureThreshold: 600
