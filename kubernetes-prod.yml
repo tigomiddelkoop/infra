@@ -17,6 +17,13 @@ spec:
       containers:
         - name: infra
           image: rg.nl-ams.scw.cloud/genericdevelopment/infra:1.0.0
+#          resources:
+#            requests:
+#              memory: "64Mi"
+#              cpu: "200m"
+#            limits:
+#              memory: "256Mi"
+#              cpu: "250m"
           ports:
             - containerPort: 3000
           env:
@@ -31,6 +38,9 @@ spec:
             initialDelaySeconds: 10
             periodSeconds: 10
             failureThreshold: 600
+
+      imagePullSecrets:
+        - name: regcred
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress
